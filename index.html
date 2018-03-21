@@ -17,24 +17,27 @@
   <div class="first-shot">
     <header uk-sticky="top: 200; animation: uk-animation-slide-top">
         <nav class="uk-container uk-navbar-transparent" uk-navbar>
-            <div class="uk-grid" uk-grid>
-                <div class="uk-width-auto uk-visible@m">
+            <div class="uk-width-1-1 uk-grid uk-grid-collapse" uk-grid>
+                <div class="uk-width-auto">
+                    <a class="uk-navbar-toggle" href="#offcanvas-menu" uk-toggle>
+                        <span uk-navbar-toggle-icon="ratio:1.3"></span> <span class="text uk-margin-small-left">Меню</span>
+                    </a>
                     <ul class="uk-navbar-nav">
-                        <li><a href="#">О продукции</a></li>
-                        <li><a href="#">Цены</a></li>
-                        <li><a href="#">Доставка</a></li>
-                        <li><a href="#">Сертификаты</a></li>
-                        <li><a href="#">Отзывы</a></li>
-                        <li><a href="#">Контакты</a></li>
+                        <li><a href="#about-product" uk-scroll="offset:80">О продукции</a></li>
+                        <li><a href="#price" uk-scroll="offset:80">Цены</a></li>
+                        <li><a href="#delivery" uk-scroll="offset:80">Доставка</a></li>
+                        <li><a href="#cert" uk-scroll="offset:80">Сертификаты</a></li>
+                        <li><a href="#callback" uk-scroll="offset:80">Отзывы</a></li>
+                        <li><a href="#contacts" uk-scroll="offset:80">Контакты</a></li>
                     </ul>
                 </div>
-                <div class="uk-width-auto uk-text-right@m">
+                <div class="uk-width-expand uk-text-right">
                   <div>
-                      <div class="uk-grid uk-grid-small uk-child-width-auto@s" uk-grid>
-                          <div>
-                              <a href="#" class="uk-button uk-button-ghost">Заказать звонок</a>
+                      <div class="uk-width-1-1 uk-grid uk-grid-collapse" uk-grid>
+                          <div class="uk-width-auto uk-visible@s">
+                              <a class="uk-button uk-button-ghost uk-margin-small-right" href="#contacts" uk-scroll="offset:80">Заказать звонок</a>
                           </div>
-                          <div class="number">
+                          <div class="number uk-width-expand">
                               <a href="#" class="uk-button-text">+7 347 208 83 03</a>
                               <span>с 9:00 до 21:00</span>
                           </div>
@@ -46,13 +49,13 @@
     </header>
     <div class="info uk-container">
       <div class="uk-grid uk-grid-small" uk-grid>
-        <div class="uk-width-expand@m">
+        <div class="uk-width-expand@s">
             <h1 class="uk-margin-small-top">Купить арболитовые блоки</h1>
             <span class="uk-display-block">от ведущего производителя России</span>
-            <a href="#" class="uk-button uk-button-green">Оставить заявку</a>
+            <a class="uk-button uk-button-green" href="#contacts" uk-scroll="offset:80">Оставить заявку</a>
         </div>
-        <div class="uk-width-auto@m uk-text-center">
-          <div class="circle">
+        <div class="uk-width-auto@s uk-text-center">
+          <div class="circle uk-visible@s">
             <img src="images/awesome/calc.png" width="68" height="73" alt="" />
             <span class="uk-display-block">Калькулятор<br/>стоимости блоков</span>
             <a href="#" class="uk-button uk-button-default uk-margin-small-top">Рассчитать</a>
@@ -81,7 +84,7 @@
 
   <div class="second-shot">
     <div class="uk-container">
-      <h2 class="uk-title">Что делает нашу продукцию<br/>лучшей на рынке?</h2>
+      <h2 class="uk-title uk-margin-remove-top" id="about-product">Что делает нашу продукцию<br/>лучшей на рынке?</h2>
   
       <div class="uk-clearfix">
         <div class="uk-float-left">
@@ -101,13 +104,249 @@
     </div>
   </div>
 
-  <div class="">
+  <div class="third-shot">
     <div class="uk-container">
-    
-
-
+      <h2 class="uk-title">Наш арболит закупают более<br/>100 строительных компаний</h2>
+      <div class="uk-tile uk-tile-muted uk-text-center uk-margin-bottom">
+        <img src="images/l1.png" width="180" height="81" alt="Эльдорадо" />
+        <img src="images/l2.png" width="180" height="81" alt="LeroyMerlin" />
+        <img src="images/l3.png" width="180" height="81" alt="М.видео" />
+        <img src="images/l4.png" width="180" height="81" alt="METRO" />
+      </div>
+      <div class="uk-grid uk-grid-small uk-child-width-1-2 uk-child-width-1-3@m" uk-grid>
+        <div>
+          <img src="images/third-1.jpg" width="360" height="315" alt=""/>
+        </div>
+        <div>
+          <img src="images/third-2.jpg" width="360" height="315" alt=""/>
+        </div>
+        <div>
+          <img src="images/third-3.jpg" width="360" height="315" alt=""/>
+        </div>
+        <div>
+          <img src="images/third-4.jpg" width="360" height="315" alt=""/>
+        </div>
+        <div>
+          <img src="images/third-5.jpg" width="360" height="315" alt=""/>
+        </div>
+        <div>
+          <img src="images/third-6.jpg" width="360" height="315" alt=""/>
+        </div>
+      </div>
     </div>
   </div>
 
+  <div class="fourth-shot">
+    <div class="uk-container">
+      <h2 class="uk-title" id="price">ЦЕНА НИЖЕ СРЕДНЕЙ<br/>ПРИ НАИЛУЧШЕМ КАЧЕСТВЕ</h2>
+      <br/>
+    </div>
+  </div>
+
+  <div class="five-shot uk-text-center">
+    <div class="uk-container">
+      <h2 class="uk-title" id="delivery">СХЕМА РАБОТЫ ПОД ЗАКАЗ<br/>ИЗДЕЛИЯ</h2>
+      <div class="uk-grid uk-grid-small uk-child-width-1-2 uk-child-width-1-4@m" uk-grid>
+        <div>
+          <img src="images/awesome/five-1.png" width="87" height="77" alt=""/>
+          <p>Заключаем договор Вы вносите предоплату 10-20% от стоимости объёма по фиксированной цене согласно прейскуранту.</p>
+        </div>
+        <div>
+          <img src="images/awesome/five-2.png" width="87" height="77" alt=""/>
+          <p>Изготавливаем арболитовые блоки заявленных размеров в срок, согласно договору.</p>
+        </div>
+        <div>
+          <img src="images/awesome/five-3.png" width="87" height="77" alt=""/>
+          <p>Производим доставку на Ваш строительный объект max. до 30 м3 на одну единицу транспорта.</p>
+        </div>
+        <div>
+          <img src="images/awesome/five-4.png" width="87" height="77" alt=""/>
+          <p>Оплата клиентом остаточной суммы с учётом предоплаты при разгрузке на объекте.</p>
+        </div>
+      </div>
+      <div class="uk-alert-warning uk-margin-medium-top" uk-alert>
+        <p>Если блоки в наличии, на складе, договор не обязателен. Оплата производится по факту получения продукции.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="sixth-shot uk-text-center">
+    <div class="uk-container">
+      <h2 class="uk-title">АРБОЛИТОВЫЕ БЛОКИ В НАЛИЧИИ И ПОД ЗАКАЗ</h2>
+      <br/>
+    </div>
+  </div>
+
+  <div class="seventh-shot uk-text-center">
+    <div class="uk-container">
+      <h2 class="uk-title">Калькулятор блоков</h2>
+      <br/>
+    </div>
+  </div>
+
+  <div class="eighth-shot">
+    <div class="uk-container">
+      <h2 class="uk-title">ДОСТАВИМ АРБОЛИТ ЗАВТРА СВОИМ СПЕЦТРАНСПОРТОМ</h2>
+      <div class="uk-grid uk-grid-small" uk-grid>
+        <div class="uk-width-expand@m">
+          <ul class="uk-list">
+            <li>Стоимость доставки рассчитывается индивидуально, в зависимости от расстояния.</li>
+            <li>В некоторые города маршрут просчитывается по (А 107 ММК) из-за запрета движения Грузовых авто более 12 тонн по МКАД с 6,00 до 22,00</li>
+            <li>Доставка обычным манипулятором от 6 000 руб. расстояние считается от места погрузки. Из расчета 1км — 70 руб. Объём перевозимого груза (12 поддонов — 15м³)</li>
+            <li>Выгрузка на второй этаж до 8 метров в высоту от машины 6-8 м. при подъезде техники вплотную к зданию! +1 000 руб. (6 поддонов)</li>
+            <li>Работа стропальщиком водителем-машинистом выполнятся не может в целях безопасности!</li>
+            <li>На случай если у Вас нет возможности производить работу стропальщика. Предоставляем своих рабочих +1 000 руб. Подъездные пути должны быть подготовлены для проезда техники.<br/><br/>Если при отгрузке машина забуксует в грязи и т. д. Для эвакуации трактор или другой тягач оплачивает клиент.</li>
+          </ul>
+        </div>
+        <div class="uk-width-auto@m uk-visible@m">
+          <img src="images/eighth-1.jpg" alt="ДОСТАВИМ АРБОЛИТ ЗАВТРА СВОИМ СПЕЦТРАНСПОРТОМ" width="" height="" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ninth-shot uk-text-center">
+    <div class="uk-container">
+      <h2 class="uk-title uk-margin-top" id="cert">МЫ ПРОИЗВОДИМ АРБОЛИТ<br/>В ПОЛНОМ СООТВЕТСТВИИ<br/>С ТРЕБОВАНИЯМИ ГОССТАНДАРТА</h2>
+      <div class="uk-grid uk-child-width-1-3" uk-grid>
+        <div>
+          <img class="uk-margin-large-top" src="images/license1.jpg" width="345" height="488" alt=""/> 
+        </div>
+        <div>
+          <img src="images/license2.jpg" width="345" height="488" alt=""/> 
+        </div>
+        <div>
+          <img class="uk-margin-large-top" src="images/license3.jpg" width="345" height="488" alt=""/> 
+        </div>
+      </div>
+      <div class="uk-clearfix"></div>
+    </div>
+  </div>
+
+  <div class="tenth-shot uk-text-center">
+    <div class="uk-container">
+      <h2 class="uk-title uk-margin-remove-top" id="callback">ОТЗЫВЫ О НАШЕЙ ПРОДУКЦИИ</h2>
+      <div class="uk-grid uk-child-width-1-2@s uk-child-width-1-3@m uk-text-left uk-flex-center" uk-grid>
+        <div>
+          <div class="uk-card uk-card-default uk-card-small uk-card-body uk-box-shadow-small">
+            <p>В конце апреля 2016 начали возводить стены. 9 мая смотрели салют со второго этажа нового дома. А в сентябре теплый контур дома был готов и закрыт наружной декоративной штукатуркой. Начали внутреннюю отделку. </p>
+            <p>Спасибо за качественный материал. Ни одного бракованного блока и отличная геометрия. Дом очень хорошо держит тепло, что позволяет вести отделочные работы зимой. </p>
+            <hr/>
+            <div class="info uk-grid uk-grid-small uk-child-width-1-2" uk-grid>
+              <div>Вадим</div>
+              <div class="uk-text-right">01.02.2018</div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="uk-card uk-card-default uk-card-small uk-card-body uk-box-shadow-small">
+            <p>В конце апреля 2016 начали возводить стены. 9 мая смотрели салют со второго этажа нового дома. А в сентябре теплый контур дома был готов и закрыт наружной декоративной штукатуркой. Начали внутреннюю отделку. </p>
+            <p>Спасибо за качественный материал. Ни одного бракованного блока и отличная геометрия. Дом очень хорошо держит тепло, что позволяет вести отделочные работы зимой. </p>
+            <hr/>
+            <div class="info uk-grid uk-grid-small uk-child-width-1-2" uk-grid>
+              <div>Вадим</div>
+              <div class="uk-text-right">01.02.2018</div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="uk-card uk-card-default uk-card-small uk-card-body uk-box-shadow-small">
+            <p>В конце апреля 2016 начали возводить стены. 9 мая смотрели салют со второго этажа нового дома. А в сентябре теплый контур дома был готов и закрыт наружной декоративной штукатуркой. Начали внутреннюю отделку. </p>
+            <p>Спасибо за качественный материал. Ни одного бракованного блока и отличная геометрия. Дом очень хорошо держит тепло, что позволяет вести отделочные работы зимой. </p>
+            <hr/>
+            <div class="info uk-grid uk-grid-small uk-child-width-1-2" uk-grid>
+              <div>Вадим</div>
+              <div class="uk-text-right">01.02.2018</div>
+            </div>
+          </div>
+        </div>
+        <div class="uk-hidden">
+          <div class="uk-card uk-card-default uk-card-small uk-card-body uk-box-shadow-small">
+            <p>В конце апреля 2016 начали возводить стены. 9 мая смотрели салют со второго этажа нового дома. А в сентябре теплый контур дома был готов и закрыт наружной декоративной штукатуркой. Начали внутреннюю отделку. </p>
+            <p>Спасибо за качественный материал. Ни одного бракованного блока и отличная геометрия. Дом очень хорошо держит тепло, что позволяет вести отделочные работы зимой. </p>
+            <hr/>
+            <div class="info uk-grid uk-grid-small uk-child-width-1-2" uk-grid>
+              <div>Вадим</div>
+              <div class="uk-text-right">01.02.2018</div>
+            </div>
+          </div>
+        </div>
+        <div class="uk-hidden">
+          <div class="uk-card uk-card-default uk-card-small uk-card-body uk-box-shadow-small">
+            <p>В конце апреля 2016 начали возводить стены. 9 мая смотрели салют со второго этажа нового дома. А в сентябре теплый контур дома был готов и закрыт наружной декоративной штукатуркой. Начали внутреннюю отделку. </p>
+            <p>Спасибо за качественный материал. Ни одного бракованного блока и отличная геометрия. Дом очень хорошо держит тепло, что позволяет вести отделочные работы зимой. </p>
+            <hr/>
+            <div class="info uk-grid uk-grid-small uk-child-width-1-2" uk-grid>
+              <div>Вадим</div>
+              <div class="uk-text-right">01.02.2018</div>
+            </div>
+          </div>
+        </div>
+        <div class="uk-hidden">
+          <div class="uk-card uk-card-default uk-card-small uk-card-body uk-box-shadow-small">
+            <p>В конце апреля 2016 начали возводить стены. 9 мая смотрели салют со второго этажа нового дома. А в сентябре теплый контур дома был готов и закрыт наружной декоративной штукатуркой. Начали внутреннюю отделку. </p>
+            <p>Спасибо за качественный материал. Ни одного бракованного блока и отличная геометрия. Дом очень хорошо держит тепло, что позволяет вести отделочные работы зимой. </p>
+            <hr/>
+            <div class="info uk-grid uk-grid-small uk-child-width-1-2" uk-grid>
+              <div>Вадим</div>
+              <div class="uk-text-right">01.02.2018</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="show uk-button uk-button-white uk-margin-medium-top">Показать ещё</a>
+    </div>
+  </div>
+
+  <div class="eleventh-shot">
+    <div class="uk-container">
+      <h2 class="uk-title" id="contacts">Контакты</h2>
+      <div class="uk-grid uk-child-width-1-2@s uk-margin-medium-bottom" uk-grid>
+        <div class="uk-width-1-1 uk-width-auto@s uk-width-1-2@l">
+          <ul class="uk-list uk-width-large@m">
+            <li class="address">Башкортостан, г. Октябрьский,<br/>Заитово, ул. Пушкина 25</li>
+            <li class="phone">+7 (495) 123 45-67</li>
+            <li class="mail">mail@site.ru</li>
+          </ul>
+        </div>
+        <div class="uk-width-1-1 uk-width-expand@s uk-width-1-2@l">
+          <form>
+            <div class="uk-grid uk-grid-small" uk-grid>
+              <div class="uk-width-1-2@s uk-width-2-5@l">
+                <input type="text" placeholder="Ваше имя" class="uk-input" />
+              </div>
+              <div class="uk-width-1-2@s uk-width-3-5@l">
+                <input type="text" placeholder="+7 Номер телефона" class="uk-input" />
+              </div>
+            </div>
+            <label class="uk-margin uk-display-block"><input type="checkbox" class="uk-checkbox uk-margin-small-right" />Я согласен на обработку моих <a href="#">персональных данных</a></label>
+            <button type="submit" class="uk-button uk-button-green">Отправить заявку</button>
+          </form>
+        </div>
+      </div>
+      <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A98f90696e5211fdd27cee041e7cc54fc74d7ce391a0ceeb032ab39bd4f2357d4&amp;width=100%25&amp;height=500&amp;lang=ru_RU&amp;scroll=true"></script>
+    </div>
+  </div>
+
+  <footer class="uk-container">
+    <div class="uk-grid uk-grid-small uk-child-width-1-2" uk-grid>
+      <div>© 2011-2018 Все права защищены</div>
+      <div class="uk-text-right copyright">Created with love by <a href="http://wolfcreative.ru/" class="uk-button-text">wolfcreative.ru</a></div>
+    </div>
+  </footer>
+
+
+  <div id="offcanvas-menu" uk-offcanvas="overlay: true">
+    <div class="uk-offcanvas-bar uk-flex uk-flex-column">
+      <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
+          <li><a href="#about-product" uk-scroll="offset:80">О продукции</a></li>
+          <li><a href="#price" uk-scroll="offset:80">Цены</a></li>
+          <li><a href="#delivery" uk-scroll="offset:80">Доставка</a></li>
+          <li><a href="#cert" uk-scroll="offset:80">Сертификаты</a></li>
+          <li><a href="#callback" uk-scroll="offset:80">Отзывы</a></li>
+          <li><a href="#contacts" uk-scroll="offset:80">Контакты</a></li>
+      </ul>
+    </div>
+  </div>
 </body>
 </html>
