@@ -1,8 +1,9 @@
 @font-face{font-family:'ProximaNovaSemibold';src:url(../fonts/ProximaNova-Semibold.eot);src:url(../fonts/ProximaNova-Semibold.eot) format("embedded-opentype"),url(../fonts/ProximaNova-Semibold.woff) format("woff"),url(../fonts/ProximaNova-Semibold.ttf) format("truetype"),url(../fonts/ProximaNova-Semibold.svg#ProximaNova-Semibold) format("svg");font-weight:400;font-style:normal}
 @font-face{font-family:'ProximaNovaBold';src:url(../fonts/ProximaNova-Bold.eot);src:url(../fonts/ProximaNova-Bold.eot) format("embedded-opentype"),url(../fonts/ProximaNova-Bold.woff) format("woff"),url(../fonts/ProximaNova-Bold.ttf) format("truetype"),url(../fonts/ProximaNova-Bold.svg#ProximaNova-Bold) format("svg");font-weight:400;font-style:normal}
 @font-face{font-family:'Proxima Nova Black';src:url(../fonts/ProximaNova-Black.eot);src:url(../fonts/ProximaNova-Black.eot?#iefix) format("embedded-opentype"),url(../fonts/ProximaNova-Black.woff) format("woff"),url(../fonts/ProximaNova-Black.ttf) format("truetype");font-weight:400;font-style:normal}
+@font-face{font-family:'ProximaNovaRegular';src:url('../fonts/ProximaNova-Regular.eot');src:url('../fonts/ProximaNova-Regular.eot') format('embedded-opentype'),url('../fonts/ProximaNova-Regular.woff') format('woff'),url('../fonts/ProximaNova-Regular.ttf') format('truetype'),url('../fonts/ProximaNova-Regular.svg#ProximaNova-Regular') format('svg');font-weight:400;font-style:normal}
 
-html{color:#222;font-size:16px;line-height:normal;font-family:'ProximaNovaSemibold',sans-serif}
+html{color:#111;font-size:16px;line-height:normal;font-family:'ProximaNovaSemibold',sans-serif}
 a{-webkit-transition:.3s ease-in-out;transition:.3s ease-in-out}
 a:hover,a:focus{-webkit-transition:.3s ease-in-out;transition:.3s ease-in-out}
 p{font-size:16px;font-family:'ProximaNovaSemibold';line-height:24px}
@@ -16,6 +17,12 @@ header .uk-navbar-nav > li > a{height:45px;font:18px ProximaNovaSemibold,sans-se
 header .uk-navbar-nav > li > a:after{content:'';width:100%;border-top:1px solid #a1a4a7;position:absolute;bottom:13px}
 header .number a{font-size:28px;line-height:47px;color:#fff;display:block}
 header .number span{display:block;color:#d6d6d6;font-size:16px;margin-top:-8px}
+header.uk-active{background: #fff;padding:2px 0;box-shadow:0 3px 5px rgba(0,0,0,0.03)}
+header.uk-active .uk-navbar-nav > li > a{color:#222}
+header.uk-active .number a{color:#222}
+header.uk-active .number span{display:none}
+header.uk-active .uk-button-ghost{background:rgba(0,0,0,.35)}
+header.uk-active .uk-button-ghost:hover{background:rgba(0,0,0,.45)}
 
 .first-shot{background:url(../images/backgrounds/back1.jpg) no-repeat center / cover;padding:42px 0}
 .first-shot .info{padding:0 82px 0 98px;box-sizing:border-box;margin-top:70px;position:relative}
@@ -28,9 +35,23 @@ header .number span{display:block;color:#d6d6d6;font-size:16px;margin-top:-8px}
 .first-shot .freespan{color:#d5d5d5;font-style:italic;display:block}
 .first-shot .advantage{color:#d5d5d5;font-size:20px}
 
+.second-shot{background:url(../images/backgrounds/back2.jpg) no-repeat center top / cover;padding:80px 0}
+.second-shot .uk-clearfix>div{max-width:418px;width:100%;box-sizing:border-box;padding:39px;color:#fff}
+.second-shot p{font:16px/normal 'ProximaNovaRegular',sans-serif;margin-bottom:30px}
+.second-shot p:last-child{margin-bottom:0}
+.second-shot strong{text-transform:uppercase;margin-bottom:5px}
+.second-shot .uk-float-left{background:#41ab28;margin-left:-39px}
+.second-shot .uk-float-right{background:#5298e5;margin-right:-39px}
+
 .uk-button-ghost{background:rgba(255,255,255,.25);color:#fff;text-transform:none;font:18px/43px 'ProximaNovaSemibold',sans-serif;border:1px solid #fff;border-radius:2px}
 .uk-button-ghost:hover,.uk-button-ghost:focus{background:rgba(255,255,255,.5);color:#fff}
-.uk-button-default{background:#fff;color:#222;text-transform:none;font:18px/43px 'ProximaNovaSemibold',sans-serif;border:1px solid #fff;border-radius:2px;box-shadow:0 9px 16px 0 rgba(0,0,0,0.27)}
-.uk-button-default:hover,.uk-button-default:focus{background:#ededed;border-color:#fff;color:#222;box-shadow:0 7px 14px 0 rgba(0,0,0,0.16)}
+.uk-button-default{background:#fff;color:#111;text-transform:none;font:18px/43px 'ProximaNovaSemibold',sans-serif;border:1px solid #fff;border-radius:2px;box-shadow:0 9px 16px 0 rgba(0,0,0,0.27)}
+.uk-button-default:hover,.uk-button-default:focus{background:#ededed;border-color:#fff;color:#111;box-shadow:0 7px 14px 0 rgba(0,0,0,0.16)}
 .uk-button-green{background:#42bb25;color:#fff;text-transform:none;font:30px/85px 'ProximaNovaBold',sans-serif;border:1px solid #42bb25;border-radius:2px;box-shadow:0 9px 11px -7px rgba(74, 228, 60, 0.8);padding:0 50px}
 .uk-button-green:hover,.uk-button-green:focus{background:#3aa021;border-color:#42bb25;color:#fff;box-shadow:0 12px 11px -8px rgba(74, 228, 60, 0.5)}
+
+.uk-title{font:60px/normal 'Proxima Nova Black',sans-serif;text-align:center;text-transform:uppercase;color:#000;margin-bottom:80px}
+
+.uk-alert{border:1px dashed;text-align:center;font-size:20px;padding:24px 29px 25px 15px}
+.uk-alert p{font-size:20px}
+.uk-alert-warning{background:#fbfae5;color:#aca721;border-color:#bfb929}
