@@ -58,7 +58,7 @@
           <div class="circle uk-visible@s">
             <img src="images/awesome/calc.png" width="68" height="73" alt="" />
             <span class="uk-display-block">Калькулятор<br/>стоимости блоков</span>
-            <a href="#" class="uk-button uk-button-default uk-margin-small-top">Рассчитать</a>
+            <a href="#calc" class="uk-button uk-button-default uk-margin-small-top" uk-scroll="offset:80">Рассчитать</a>
           </div>
           <span class="freespan uk-margin-small-top">Бесплатный расчет<br/>за 10 минут</span>
         </div>
@@ -139,7 +139,23 @@
   <div class="fourth-shot">
     <div class="uk-container">
       <h2 class="uk-title" id="price">ЦЕНА НИЖЕ СРЕДНЕЙ<br/>ПРИ НАИЛУЧШЕМ КАЧЕСТВЕ</h2>
-      <br/>
+      <div class="uk-tile uk-tile-muted uk-position-relative">
+        <p>Мы провели мониторинг производителей и установили <span>цены на 6,5% ниже</span> средней по рынку арболита в Республике Башкортостан.</p>
+        <form>
+          <legend>Оставьте заявку</legend>
+          <div class="uk-grid uk-grid-small" uk-grid>
+            <div class="uk-width-1-2@s uk-width-2-5@l">
+              <input type="text" placeholder="Ваше имя" class="uk-input" />
+            </div>
+            <div class="uk-width-1-2@s uk-width-3-5@l">
+              <input type="text" placeholder="+7 Номер телефона" class="uk-input" />
+            </div>
+          </div>
+          <label class="uk-margin uk-display-block"><input type="checkbox" class="uk-checkbox uk-margin-small-right" />Я согласен на обработку моих <a href="#modal-policy" uk-toggle>персональных данных</a></label>
+          <button type="submit" class="uk-button uk-button-green">Отправить заявку</button>
+        </form>
+        <img src="images/fourth-1.png" width="790" height="556" alt="" class="uk-visible@m" />
+      </div>
     </div>
   </div>
 
@@ -170,17 +186,113 @@
     </div>
   </div>
 
-  <div class="sixth-shot uk-text-center">
+  <div class="sixth-shot">
     <div class="uk-container">
       <h2 class="uk-title">АРБОЛИТОВЫЕ БЛОКИ В НАЛИЧИИ И ПОД ЗАКАЗ</h2>
-      <br/>
+      <div class="wrapper">
+        <div class="uk-grid uk-grid-large" uk-grid>
+          <div class="uk-width-auto@m">
+            <img src="images/six-1.png" width="322" height="200" alt="" />
+          </div>
+          <div class="uk-width-expand@m">
+            <div>
+              <div class="uk-grid uk-margin-bottom">
+                <div class="uk-width-1-2@l"><h3>U-Образный Блок</h3></div>
+                <div class="uk-width-1-2 uk-width-1-4@l">
+                  <span class="old-price">135 Р/шт</span>
+                </div>
+                <div class="uk-width-1-2 uk-width-1-4@l">
+                  <span class="price">120 Р/шт</span>
+                </div>
+              </div>
+            </div>
+            <p class="uk-margin-small">Размер: <b>300*200*500 (мм)</b></p>
+            <p class="uk-margin-small">Описание: <b>С выемкой для оконных перемычек и армопояса</b></p>
+            <p class="uk-margin-small">Уточнение: <b>Расчёт в штуках. На поддоне 42 шт.</b></p>
+            <a class="uk-button uk-button-green" href="#modal-form" uk-toggle>Оставить заявку</a>
+          </div>
+        </div>
+      </div>
+      <p class="uk-text-center">Продукция согласно ГОСТ 19222-84. Сертифицирована: <img src="images/six-2.jpg" widht="108" height="33" alt="ГОСТ 19222-84" class="uk-margin-small-left" /></p>
     </div>
   </div>
 
-  <div class="seventh-shot uk-text-center">
+  <div class="seventh-shot uk-margin-large-top">
     <div class="uk-container">
-      <h2 class="uk-title">Калькулятор блоков</h2>
-      <br/>
+      <h2 class="uk-title uk-margin-remove-top" id="calc">Калькулятор блоков</h2>
+      <div class="wrapper">
+        <div class="uk-grid uk-grid-collapse calc form-calc" uk-grid>
+          <div class="form uk-width-1-2@s uk-width-expand@m">
+            <div>
+              <div class="title">Введите ваши данные</div>
+              <table class="uk-table uk-table-justify">
+                <tbody>
+                  <tr>
+                    <td>Общая длина стен, м:</td>
+                    <td style="padding:12px 0 0 10px"><input class="js-numbs js-calc-field js-calc-field--L uk-input" maxlength="5" type="text"></td>
+                  </tr>
+                  <tr>
+                    <td>Высота стен, м:</td>
+                    <td style="padding:12px 0 0 10px"><input class="js-numbs js-calc-field js-calc-field--H uk-input" maxlength="5" type="text"></td>
+                  </tr>
+                  <tr>
+                    <td>Площадь проёмов, м3:</td>
+                    <td style="padding:12px 0 0 10px"><input class="js-numbs js-calc-field js-calc-field--S uk-input" maxlength="5" type="text"></td>
+                  </tr>
+                  <tr>
+                    <td colspan="2">
+                      <span class="uk-display-block uk-margin-small">Размер блоков</span>
+                      <select sele="size" class="js-styler js-calc-field js-calc-field--block uk-select uk-width-1-1">
+                        <option value="1">500*300*200 (мм)</option>
+                        <option value="2">410*300*200 (мм)</option>
+                        <option value="3">820*620*100 (мм)</option>
+                        <option value="4">820*620*80 (мм)</option>
+                      </select>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="uk-grid uk-grid-collapse uk-child-width-1-2" uk-grid>
+                <div>
+                  <button type="button" class="uk-button uk-button-white js-calc-button js-calc-button--calc">Рассчитать</button>
+                </div>
+                <div class="uk-text-center">
+                  <button type="button" class="uk-button uk-button-text js-calc-button js-calc-button--reset">Очистить</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="result">
+            <div>
+              <div class="title">Результат</div>
+              <table class="uk-table uk-table-divider uk-table-justify">
+                <tbody>
+                  <tr>
+                    <td>Общая площадь, м²:</td>
+                    <td><b><span class="js-calc-result--S">0</span></b></td>
+                  </tr>
+                  <tr>
+                    <td>Общий объем, м³:</td>
+                    <td><b><span class="js-calc-result--V">0</span></b></td>
+                  </tr>
+                  <tr>
+                    <td>Кол-во блоков, шт:</td>
+                    <td><b><span class="js-calc-result--count">0</span></b></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span class="uk-display-block uk-margin-small">Общая стоимость</span>
+                      <b><span class="js-calc-result--cost">0</span></b>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <a class="uk-button uk-button-green" href="#modal-form" uk-toggle>Оставить заявку</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -319,7 +431,7 @@
                 <input type="text" placeholder="+7 Номер телефона" class="uk-input" />
               </div>
             </div>
-            <label class="uk-margin uk-display-block"><input type="checkbox" class="uk-checkbox uk-margin-small-right" />Я согласен на обработку моих <a href="#">персональных данных</a></label>
+            <label class="uk-margin uk-display-block"><input type="checkbox" class="uk-checkbox uk-margin-small-right" />Я согласен на обработку моих <a href="#modal-policy" uk-toggle>персональных данных</a></label>
             <button type="submit" class="uk-button uk-button-green">Отправить заявку</button>
           </form>
         </div>
@@ -335,7 +447,6 @@
     </div>
   </footer>
 
-
   <div id="offcanvas-menu" uk-offcanvas="overlay: true">
     <div class="uk-offcanvas-bar uk-flex uk-flex-column">
       <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
@@ -347,6 +458,45 @@
           <li><a href="#contacts" uk-scroll="offset:80">Контакты</a></li>
       </ul>
     </div>
+  </div>
+
+  <div id="modal-form" uk-modal>
+    <form class="uk-modal-dialog">
+      <button class="uk-modal-close-default" type="button" uk-close></button>
+      <div class="uk-modal-header uk-text-center">
+        <div class="uk-modal-title">Форма заявки</div>
+      </div>
+      <div class="uk-modal-body">
+        <div class="uk-margin">
+          <label class="uk-form-label" for="form-name">Ваше имя</label>
+          <div class="uk-form-controls uk-margin-small-top">
+            <input class="uk-input" id="form-name" type="text" placeholder="Имя пишем сюда..." minlength="2" maxlength="30">
+          </div>
+        </div>
+        <div class="uk-margin">
+          <label class="uk-form-label" for="form-number">Номер телефона</label>
+          <div class="uk-form-controls uk-margin-small-top">
+            <input class="uk-input" id="form-number" type="text" placeholder="А здесь номер телефона" minlength="5" maxlength="30">
+          </div>
+        </div>
+      </div>
+      <div class="uk-modal-footer uk-text-center">
+        <label class="uk-margin uk-display-block"><input type="checkbox" class="uk-checkbox uk-margin-small-right" />Я согласен на обработку моих <a href="#modal-policy" uk-toggle>персональных данных</a></label>
+        <button class="uk-button uk-button-white" type="button">Отправить</button>
+      </div>
+    </form>
+  </div>
+
+  <div id="modal-policy" uk-modal>
+    <form class="uk-modal-dialog">
+      <button class="uk-modal-close-default" type="button" uk-close></button>
+      <div class="uk-modal-header uk-text-center">
+        <div class="uk-modal-title">Политика конфиденциальности</div>
+      </div>
+      <div class="uk-modal-body">
+         <p>Тут политика</p>
+      </div>
+    </form>
   </div>
 </body>
 </html>
